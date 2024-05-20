@@ -1,48 +1,38 @@
-<!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html</title>
+    <title>Aula php</title>
 </head>
 <body>
-     <h1>Isso é html</h1> 
+    <h1> Html </h1>
+    
+    <?php 
 
-    <?php
-        $dia = "terça";
-        $temperatura = 26;
+      echo "<h1 style = 'color: pink'> Olá Mundo!</h1>";
+       
+      $dia = "Terça";
+        $temperatura = 25;
 
-    if($temperatura > 25){
-            $clima = "quente";
-        }elseif($temperatura <= 25 && $temperatura >= 18){
+        if($temperatura > 25){
+            $clima = "ensolarado";
+        }elseif($temperatura <= 25 && $temperatura > 18){
             $clima = "chuvoso";
         }elseif($temperatura < 18){
             $clima = "nevando";
         }
-    
-    echo "o clima hoje está $clima, com temperatura média de $temperatura nessa $dia";
 
-    echo "<br><hr>";
-    //segunda parte
+        echo "Essa $dia começou $clima, com temperatura de $temperatura";
 
-    $nomes = array("peter", "parker", "fulano", "fubango", "cicrano");
+        //segunda parte
 
-    echo "<br>";
-
-    for($i=0; $i <= 4; $i++){
-        echo "<br>";
-        echo $nomes[$i];
-    
-    };
-    echo "<br><hr>";
-    $total = 0 ;
-    foreach ($nomes as $nome) {
-        echo "<br>";
-        echo $nome;
-        $total++ ;
-    };
         
-     ?>
-    
+  
+  
+  ?>
+
+
+
 </body>
 </html>
